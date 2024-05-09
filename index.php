@@ -9,7 +9,13 @@
 	<div class="content">
 		<h1 style="color: blueviolet;">Welcom to Autos Database</h1>
 		<p>
-			Please log in <a href="login.php" style="background-color: lightblue;">here</a> to <a href="autos.php">Autos Database </a>
+			 <a href="login.php">Please log in</a>
+		</p>
+		<p>
+		Attempt to go to <a href="autos.php">autos.php</a> without logging in - it should fail with an error message.
+		</p>
+		<p>
+			 <a href="https://www.wa4e.com/assn/autosdb/" target="_blank">Specification for this Application</a>
 		</p>
 		
 	</div>
