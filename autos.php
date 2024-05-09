@@ -42,7 +42,7 @@ if (isset($_POST['logout'])) {
 	$sql = $pdo->query("SELECT * FROM autos");
 	$row = $sql->fetchAll(PDO::FETCH_ASSOC);
 	?></P>
-	<form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
+	<form method="POST">
 		<lable for="make">Make:</lable>
 		<input type="text" name="make" id="make"><br><br>
 		<label for="Mileage">Mileage:</label>
@@ -55,8 +55,11 @@ if (isset($_POST['logout'])) {
 	<h3>Automobiles</h3>
 
 	<p><?php
+	
 foreach ( $row as $ro ) {
-    echo ".";
+    echo "<b>.</b> ";
+	echo htmlspecialchars("<b>");
+    
     echo($ro['make']);
     echo "     ";
     echo($ro['mileage']);
